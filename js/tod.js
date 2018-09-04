@@ -23,7 +23,7 @@ function TimeOfDay(startingTime, timeInADay){
     var moonOrbitalRadius;
     const baseSunRadius=75;
     var sunRadius;
-    const moonRadius=70;
+    let moonRadius=70;
     var sunOrbitalRadius;
 
     this.canvasResized=function(){
