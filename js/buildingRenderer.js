@@ -89,6 +89,7 @@ function BuildingRenderer(){
 
   this.display = function (){
       push();
+      noSmooth();
           var floatingOffset=this.calculateFloatingOffset();
           translate(this.buildingOrigin.x,this.buildingOrigin.y+floatingOffset);
           scale(this.buildingScale);

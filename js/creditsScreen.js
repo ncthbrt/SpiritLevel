@@ -11,21 +11,24 @@ function CreditsScreen () {
 
   this.display = function () {
     var credits_text = 'Art & Programming: Nick Cuthbert\n'
-      + 'Programming: Nic Malan\n\n'
-      + 'Art: Chad Lawrence'
-      + 'Resources:\n'
+      + 'Programming: Nic Malan\n'
+      + 'Art: Chad Lawrence\n'      
       + 'Music: "The Elevator Bossa Nova" by Bensound\n';
 
-    push();
+    push();    
     noStroke();
     fill(0, 0, 0);
+    push();
     textSize(40);
     textAlign(CENTER);
     text('CREDITS', width / 2, 100);
-
+    pop();
+    push();
     textSize(20);
-    textLeading(30);
-    text(credits_text, width / 2, 150, width - 330, height - 100);
+    textLeading(30);    
+    textAlign(CENTER);
+    text(credits_text, width / 2, 150);
+    pop();
     pop();
 
   };
