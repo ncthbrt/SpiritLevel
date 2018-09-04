@@ -22,7 +22,7 @@
     const MILLISECONDS_IN_DAY=60*1000;
     const STARTING_TIME=5.5;
 
-    const ASSETS_FOLDER='../assets/';
+    const ASSETS_FOLDER='/assets/';
     const BUILDING_FOLDER = ASSETS_FOLDER+'building_black/';
 
     //Indicators
