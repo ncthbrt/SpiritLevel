@@ -49,7 +49,7 @@ function GameScreen(){
 
         this.sound_doors.setVolume(0.5);
 
-        this.elevatorColor= color(205, 150, 0);
+        this.elevatorColor= color(255, 200, 0);
         this.elevator = new Elevator();
         this.elevator.initialise();
         this.building = new Building();
@@ -83,7 +83,7 @@ function GameScreen(){
 
       push();
       noStroke();
-      fill(0, 0, 0);
+      fill(255, 255, 255);
       textSize(20);
       var s = 'Score: ';
       s += Math.ceil(this.score * 100).toString();

@@ -5,7 +5,7 @@
 
     const ELEVATOR_FLOORS = 12;
     const ELEVATOR_CAPACITY = 5;
-    const ELEVATOR_SPEED = 75;
+    const ELEVATOR_SPEED = 120;
 
     const ELEVATOR_DRAW_HEIGHT = 100;
     const ELEVATOR_DRAW_WIDTH = 350;
@@ -22,7 +22,7 @@
     const MILLISECONDS_IN_DAY=60*1000;
     const STARTING_TIME=5.5;
 
-    const ASSETS_FOLDER='/assets/';
+    const ASSETS_FOLDER='/SpiritLevel/assets/';
     const BUILDING_FOLDER = ASSETS_FOLDER+'building_black/';
 
     //Indicators

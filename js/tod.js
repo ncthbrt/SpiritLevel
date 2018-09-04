@@ -14,9 +14,9 @@ function TimeOfDay(startingTime, timeInADay){
     this.currentTime+=((delta * 1000) /this.timeInADay)*24;
     }
 
-    var skies_red=[4,236,255,72,234,236];
-    var skies_green=[15,85,236,197,197,85];
-    var skies_blue=[42,85,146,255,255,85];
+    var skies_red=[8,236,255,72,234,236];
+    var skies_green=[30,85,236,197,197,85];
+    var skies_blue=[84,85,146,255,255,85];
     var colourKeyTimeFrames=[0,7,9,12,14,17];
 
     var stellarOrigin;
@@ -76,11 +76,12 @@ function TimeOfDay(startingTime, timeInADay){
 
         var tempTime=this.currentTime%24; //Normalises time to produce time of day, rather than total time
 
-        //START BACKGROUND COLOUR CALCULATION
-
+        //START BACKGROUND COLOUR CALCULATION                
+        push();
+        colorMode(RGB);
         background(this.getSkyColor());
-        //END BACKGROUND COLOUR CALCULATION
-
+        pop();
+        //END BACKGROUND COLOUR CALCULATION        
         //START SUN-MOON DISPLAY
         var sunAngle=PI*2*(((tempTime+3)%24)/24.0);
 

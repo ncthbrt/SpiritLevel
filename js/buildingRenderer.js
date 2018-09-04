@@ -96,6 +96,7 @@ function BuildingRenderer(){
           for(var i=gameScreen.buildingSprites.length-1; i>=0; i--){
               for(var j=0; j<this.floorTypeCount[i]; j++){
                   push();
+                    scale(1, 1.001);
                     translate(-gameScreen.buildingSprites[i].width/2,0);
                     image(gameScreen.buildingSprites[i],0,0);
                   pop();
